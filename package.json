@@ -1,0 +1,17 @@
+{
+  "name": "probe-locator",
+  "version": "1.0.0",
+  "description": "A tool for obtaining Wi-Fi locations from nearby sniffed probe requests",
+  "main": "index.ts",
+  "repository": "https://github.com/jwstanly/probe-locator.git",
+  "author": "John Wright Stanly <probe-locator@jwstanly.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.1"
+  }
+}
