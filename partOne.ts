@@ -1,16 +1,9 @@
 import { exec } from 'child_process';
 import config from './config';
-import type { WigleSearchResults } from './types';
+import type { DataFileSchema } from './types';
 import fs from 'fs';
 
-let data: {
-  macToSsid: {
-    [mac: string]: string[];
-  };
-  ssidToWigle: {
-    [ssid: string]: WigleSearchResults[];
-  };
-} = {
+let data: DataFileSchema = {
   macToSsid: {},
   ssidToWigle: {},
 };

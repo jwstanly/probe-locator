@@ -1,16 +1,9 @@
 import axios from 'axios';
 import config from './config';
-import { WigleSearchResponse, WigleSearchResults } from './types';
+import { DataFileSchema, WigleSearchResponse } from './types';
 import fs from 'fs';
 
-let data: {
-  macToSsid: {
-    [mac: string]: string[];
-  };
-  ssidToWigle: {
-    [ssid: string]: WigleSearchResults[];
-  };
-} = {
+let data: DataFileSchema = {
   macToSsid: {},
   ssidToWigle: {},
 };
